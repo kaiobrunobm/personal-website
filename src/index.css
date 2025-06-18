@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@layer base {
+
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--color-base);
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--color-base)
+  }
+
+}
+
+@layer components {
+  .caution {
+    background: repeating-linear-gradient(-55deg,
+        #000,
+        #000 10px,
+        #f4c20e 10px,
+        #f4c20e 20px);
+  }
+}
+
+
+@theme {
+  --font-roboto: "Roboto Mono", monospace;
+
+  --color-backgroud: #fef9ed;
+  --color-base: #373737;
+  --color-light-base: #737373;
+  --color-highlights: #FF7043;
+}
