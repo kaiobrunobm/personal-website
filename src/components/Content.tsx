@@ -6,7 +6,7 @@ import Projects from './Projects';
 
 const Content: React.FC = () => {
   return (
-    <div className='flex flex-col items-center self-stretch'>
+    <div className='flex flex-col items-center self-stretch lg:col-span-2 '>
       <Homepage />
       <About />
       <Experience />

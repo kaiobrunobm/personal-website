@@ -1,11 +1,16 @@
 import React from 'react';
-import arrowIcon from '../../public/icons/arrow.svg'
+
+import { ArrowUpRightIcon } from '@phosphor-icons/react';
 
 const Link: React.FC = () => {
   return (
-    <a className='flex text-backgroud hover:text-highlights transition-all duration-200 ease-in cursor-pointer px-12 gap-4'>
+    <a className='group flex items-center flex-center text-backgroud hover:text-highlights transition-all duration-200 ease-in cursor-pointer px-12 gap-4'>
       <p>View full resume</p>
-      <img src={arrowIcon} alt='arrow icon, link indicator' />
+      <ArrowUpRightIcon
+        weight='bold'
+        className='group-hover:-translate-y-0.5
+            group-hover:translate-0.5 transition-all duration-200 ease-in'/>
+
     </a>
   );
 };

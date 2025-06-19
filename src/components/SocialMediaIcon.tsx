@@ -1,15 +1,15 @@
 import React from 'react';
 
 interface SocialMediaIconProps {
-  socialMedia: string;
   socialMediaLink: string;
-  srcIcon: string | undefined
+  children: React.ReactNode;
+  className?: string;
 }
 
-const SocialMediaIcon: React.FC<SocialMediaIconProps> = ({ socialMedia, srcIcon, socialMediaLink }) => {
+const SocialMediaIcon: React.FC<SocialMediaIconProps> = ({ children, socialMediaLink }) => {
   return (
-    <a href={socialMediaLink} className='size-6 md:size-[30px] hover:fill-blue-300'>
-      <img src={srcIcon} alt={`Social media icon ${socialMedia}`} />
+    <a href={socialMediaLink} className='size-6 cursor-pointer md:size-[30px] lg:size-[38px]'>
+      {children}
     </a>
   );
 };

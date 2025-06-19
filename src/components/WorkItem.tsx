@@ -1,5 +1,5 @@
 import React from 'react';
-import arrowIcon from '../../public/icons/arrow.svg'
+import { ArrowUpRightIcon } from '@phosphor-icons/react';
 
 export interface WorkItemProps {
   startYear: number;
@@ -11,17 +11,22 @@ export interface WorkItemProps {
 
 const WorkItem: React.FC<WorkItemProps> = ({ startYear, endYear, company, companyPosition, jobDescription }) => {
   return (
-    <div className='flex flex-col items-start self-stretch gap-3 rounded-2xl bg-base z-30 lg:flex-row lg:gap-16'>
+    <div className='group flex flex-col items-start self-stretch gap-3 rounded-2xl bg-base z-30 p-8 cursor-pointer hover:bg-black/10  hover:inset-shadow-light-base transition-all duration-200 ease-in lg:flex-row lg:gap-16'>
       <div className='flex justify-center items-center gap-0.5 text-sm font-bold text-light-base text-center min-w-28'>
         <span>{startYear}</span> - <span className='uppercase'>{endYear}</span>
       </div>
       <div className='flex flex-col items-start self-stretch gap-3'>
         <div className='flex flex-col items-start self-stretch gap-4'>
           <div className='flex items-center self-stretch gap-6'>
-            <h3 className='font-bold text-backgroud'>
+            <h3 className='font-bold text-backgroud group-hover:text-highlights transition-all duration-200 ease-in'>
               {company}
             </h3>
-            <img src={arrowIcon} alt="Arrow icon, link indicator" className='size-4' />
+            <ArrowUpRightIcon
+              weight='bold'
+              className='group-hover:-translate-y-0.5
+              text-backgroud group-hover:text-highlights
+            group-hover:translate-0.5 transition-all duration-200 ease-in'/>
+
           </div>
           <span className='flex justify-center items-center gap-1 text-sm text-light-base font-light'>
             [{companyPosition}]
