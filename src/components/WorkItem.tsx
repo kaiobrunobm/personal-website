@@ -11,7 +11,7 @@ export interface WorkItemProps {
 
 const WorkItem: React.FC<WorkItemProps> = ({ startYear, endYear, company, companyPosition, jobDescription }) => {
   return (
-    <div className='group flex flex-col items-start self-stretch gap-3 rounded-2xl bg-base z-30 p-8 cursor-pointer hover:bg-black/10  hover:inset-shadow-light-base transition-all duration-200 ease-in lg:flex-row lg:gap-16'>
+    <div className='group flex flex-col items-start self-stretch gap-3 rounded-2xl bg-base z-30  cursor-pointer hover:bg-black/10  hover:inset-shadow-light-base transition-all duration-200 ease-in lg:flex-row lg:gap-16 lg:p-8'>
       <div className='flex justify-center items-center gap-0.5 text-sm font-bold text-light-base text-center min-w-28'>
         <span>{startYear}</span> - <span className='uppercase'>{endYear}</span>
       </div>

@@ -1,10 +1,14 @@
 import React from 'react';
 
-const About: React.FC = () => {
+interface aboutProps {
+  aboutRef: React.RefObject<HTMLDivElement | null>;
+}
+
+const About: React.FC<aboutProps> = ({ aboutRef }) => {
   return (
-    <div className='flex flex-col items-center self-stretch gap-6 pt-32'>
+    <div className='h-screen flex flex-col items-center self-stretch gap-6 pt-32' ref={aboutRef} id='about'>
       <div className='flex flex-col items-center justify-center gap-6 self-stretch px-6 pb-[19rem] md:text-xl lg:text-2xl lg:px-24'>
-        <p className='text-center lg:text-start'>I'm a <span className='font-bold text-highlights'>full-stack</span> developer and <span className='font-bold text-highlights'>UX/UI designer
+        <p className='text-center lg:text-start'>I'm a <span className='font-bold text-highlights'>full-stack</span> developer and <span className='font-bold text-higbhlights'>UX/UI designer
         </span> who loves building clean, accessible websites and applications. I enjoy working on both the design and the code-making things that not only look good but also work well for everyone.</p>
 
         <p className='text-center lg:text-start'>

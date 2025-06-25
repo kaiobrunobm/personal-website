@@ -3,7 +3,7 @@ import mouseIcon from '../../public/icons/mouse-icon.svg'
 
 const Homepage: React.FC = () => {
   return (
-    <div className='flex flex-col items-center self-stretch gap-2.5 px-[3rem] lg:h-screen lg:items-center lg:justify-center'>
+    <div className='h-screen flex flex-col items-center self-stretch gap-2.5 px-[3rem] lg:h-screen lg:items-center lg:justify-center'>
       <div className='flex flex-col items-center self-stretch gap-6 py-[4.5rem]'>
         <div className='bg-light-base rounded-full h-11 w-11' />
         <div className='flex flex-col items-center gap-3 lg:gap-5'>
