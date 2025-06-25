@@ -1,5 +1,4 @@
 import React from 'react';
-import aboutmePhoto from '../../public/about-me-photo.svg'
 
 const About: React.FC = () => {
   return (
@@ -11,9 +10,7 @@ const About: React.FC = () => {
         <p className='text-center lg:text-start'>
           Right now, I’m working as an <span className='font-bold text-highlights'>IT Technician</span> while pursuing a degree in Computer Science. I’m always learning and exploring new technologies, and I enjoy solving problems through smart design and solid development.
         </p>
-
       </div>
-      {/* <img src={aboutmePhoto} alt="A photo of me with a text 'about me' on top" className='w-72 h-auto self-end absolute -top-20 -bottom-[540px] z-10' /> */}
     </div>
   );
 };
