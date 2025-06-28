@@ -11,7 +11,6 @@ const useOnScreen: React.FC<useOnScreenProps> = ({ ref }) => {
     ([entry]) => setIntersecting(entry.isIntersecting)
   ), [ref])
 
-
   useEffect(() => {
     if (ref.current == null) {
       console.log(ref.current)

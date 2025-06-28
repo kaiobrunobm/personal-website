@@ -3,7 +3,7 @@ import { ArrowUpRightIcon } from '@phosphor-icons/react';
 
 export interface WorkItemProps {
   startYear: number;
-  endYear: number | 'Present';
+  endYear: number | string;
   company: string;
   companyPosition: string;
   jobDescription: string;

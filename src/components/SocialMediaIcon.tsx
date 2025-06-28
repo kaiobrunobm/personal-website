@@ -8,7 +8,7 @@ interface SocialMediaIconProps {
 
 const SocialMediaIcon: React.FC<SocialMediaIconProps> = ({ children, socialMediaLink }) => {
   return (
-    <a href={socialMediaLink} className='size-6 cursor-pointer md:size-[30px] lg:size-[38px]'>
+    <a href={socialMediaLink} target='_blank' className='size-6 cursor-pointer md:size-[30px] lg:size-[38px]'>
       {children}
     </a>
   );

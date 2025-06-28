@@ -5,13 +5,13 @@ import About from './About';
 import Projects from './Projects';
 import type { refsProps } from './Sidebar';
 
-const Content: React.FC<refsProps> = ({ aboutRef, experiencesRef, projectsRef }) => {
+const Content: React.FC<refsProps> = ({ aboutRef, experiencesRef, projectsRef, language }) => {
   return (
-    <div className='flex flex-col items-center self-stretch lg:col-span-2 '>
-      <Homepage />
-      <About aboutRef={aboutRef} />
-      <Experience experienceRef={experiencesRef} />
-      <Projects projectsRef={projectsRef} />
+    <div className='flex flex-col items-center gap-10 self-stretch lg:col-span-2 '>
+      <Homepage language={language} />
+      <About aboutRef={aboutRef} language={language} />
+      <Experience experienceRef={experiencesRef} language={language} />
+      <Projects projectsRef={projectsRef} language={language} />
     </div>
   );
 };
