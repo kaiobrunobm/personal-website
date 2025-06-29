@@ -25,7 +25,7 @@ const Experience: React.FC<experienceProps> = ({ experienceRef, language }) => {
         </div>
         <Works language={language} />
       </div>
-      <Link />
+      <Link language={language} />
     </div>
   );
 };
