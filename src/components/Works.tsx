@@ -43,6 +43,8 @@ const Works: React.FC<WorksProps> = ({ language }) => {
               company={company}
               companyPosition={companyPosition}
               jobDescription={jobDescription}
+
+
             />
           )
         })}
